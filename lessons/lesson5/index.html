@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       body{
+        height: 10000px;
+       }
+
+        h1 ~ p{
+            color: blue;
+        }
+        h1 + p{
+            color: red;
+        }
+        div > span{
+            color: green;
+        }
+        input[type="text"]{
+            border: 1px solid red;
+        }
+        input[type="email"]{
+            border: 1px solid blue;
+        }
+        input[type="password"]{
+            border: 1px solid green;
+        }
+        input[type="number"]{
+            border: 1px solid violet;
+        }
+        /* a[href^="http"]{
+            background: red;
+        }
+        a[href^="https"]{
+            background: green;
+        }
+        a[href$=".by/"]{
+            font-weight: 900;
+            color: #fff;
+            text-decoration: none;
+        }
+        a[href*="bmw"]{
+            font-style: italic;
+        } */
+        p::selection{
+            background: #000;
+            color: rgb(0, 181, 0);
+        }
+        h3:before{
+            content: '-------- ';
+        }
+        h3:after{
+            content: ' --------';
+        }
+        ul{
+            counter-reset: planet;
+            list-style-type: none;
+        }
+        li:before {
+            counter-increment: planet; 
+            content: 'Планета ' counter(planet) ': '; 
+        }
+
+        a:link{
+            color: red;
+        }
+        a:visited{
+            color: orange;
+        }
+        a:active{
+            font-weight: 900;
+        }
+        a:focus{
+            font-style: italic;
+        }
+        a:hover{
+            background: aqua;
+        }
+
+        li:first-child, li:last-child{
+            background-color: rgb(162, 162, 162);
+        }
+        ul.a li:nth-child(even){
+            background-color: red;
+        }
+
+        ul.b li:nth-child(2n-1){
+            background-color: blue;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <p>test</p>
+
+    <h1>Hello</h1>
+
+    <h3>hello</h3>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam eveniet, iusto dolore totam ab est modi esse vitae doloremque possimus quia veritatis consequatur soluta voluptates. Voluptate atque facere nemo tempora?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam eveniet, iusto dolore totam ab est modi esse vitae doloremque possimus quia veritatis consequatur soluta voluptates. Voluptate atque facere nemo tempora?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam eveniet, iusto dolore totam ab est modi esse vitae doloremque possimus quia veritatis consequatur soluta voluptates. Voluptate atque facere nemo tempora?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam eveniet, iusto dolore totam ab est modi esse vitae doloremque possimus quia veritatis consequatur soluta voluptates. Voluptate atque facere nemo tempora?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam eveniet, iusto dolore totam ab est modi esse vitae doloremque possimus quia veritatis consequatur soluta voluptates. Voluptate atque facere nemo tempora?</p>
+    <h3>hello</h3>
+    <hr>
+
+    <span>span1</span>
+    <h3>hello</h3>
+    <div>
+        <span>span2</span>
+
+        <p>
+            <span>span3</span>
+        </p>
+    </div>
+    <h3>hello</h3>
+    <hr>
+    <h3>hello</h3>
+    <input type="text"> <br>
+    <input type="number"> <br>
+    <input type="email"> <br>
+    <input type="number"> <br>
+    <input type="password"> <br>
+    <input type="number"> <br>
+
+    <hr>
+
+    <a href="https://www.onliner1111.by/">onliner</a> <br>
+    <a href="http://142.93.172.35:8080/">142.93.172.35</a> <br>
+    <a href="https://aliexpress.ru/">aliexpress</a> <br>
+    <a href="https://ab.onliner.by/bmw/2-seriya-active-tourer?year%5Bfrom%5D=2020&year%5Bto%5D=2013">ab.onliner</a>
+
+
+    <hr>
+
+    <ul class="a">
+        <li>Земля</li>
+        <li>Марс</li>
+        <li>Юпитер</li>
+        <li>Нептун</li>
+        <li>Венера</li>
+        <li>Меркурий</li>
+        <li>Уран</li>
+        <li>Сатурн</li>
+    </ul>
+
+    <ul class="b">
+        <li>Земля</li>
+        <li>Марс</li>
+        <li>Юпитер</li>
+        <li>Нептун</li>
+        <li>Венера</li>
+        <li>Сатурн</li>
+    </ul>
+
+    <hr>
+
+</body>
+</html>

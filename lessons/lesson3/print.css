@@ -1,0 +1,8 @@
+@import url(style.css);
+
+h1{
+    text-align: center;
+    font-style: italic;
+    color: red;
+    background-color: aqua;
+}

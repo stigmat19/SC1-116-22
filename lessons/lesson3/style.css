@@ -1,0 +1,40 @@
+body{
+    height: 10000px;
+}
+h1{
+    text-align: right;
+}
+#test{
+    color:darkorange;
+}
+p{
+    color: blue;
+}
+
+.vip{
+    color: green;
+}
+.super-vip{
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+}
+/* 11 > 10 */
+ul li{
+    color: red;
+}
+ul.B li{
+    color: blueviolet;
+}
+
+.italic{
+    font-style: italic;
+}
+p.italic{
+    color: black;
+}
+
+
+div#aaa.bbb ul#ccc.eee li.ttt a#ppp span{
+
+}
